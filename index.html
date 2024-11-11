@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="20202BSI0128">
+    <meta name="date" content="10-11-2024" scheme="DD-MM-YYYY">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 6</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <h1>Cadastrar Usuário</h1>
+
+            <fieldset id="fieldset1">
+                <legend>Dados Pessoais</legend>
+
+                <label for="name">Nome:</label>
+                <input class="txt-field" type="text" id="name" name="name">
+
+                <label for="mail">Email:</label>
+                <input class="txt-field" type="email" id="mail" name="mail">
+
+                <label for="password">Senha:</label>
+                <input class="txt-field" type="password" id="password" name="password">
+
+                <label for="confirm-password">Confirmar senha:</label>
+                <input class="txt-field" type="password" id="confirm-password" name="confirm-password">
+
+                <label>Idade:</label>
+                <div class="option">
+                    <input type="radio" id="radio1">
+                    <label for="radio1">Acima de 17</label>
+                </div>
+                
+                <div class="option">
+                    <input type="radio" id="radio2">
+                    <label for="radio2">17 ou menos</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="fieldset2">
+                <legend>Perfil</legend>
+
+                <label for="desc">Descrição:</label>
+                <textarea class="txt-field" id="desc" name="description"></textarea>
+
+                <label for="prof">Perfil de trabalho:</label>
+                <input list="profs" id="prof" name="profile">
+                <datalist id="profs" name="profiles">
+                    <option value="Front-End Dev">Front-End Developer</option>
+                    <option value="Back-End Dev">Back-End Developer</option>
+                    <option value="Web-Designer">Web-Designer</option>
+                    <option value="Sofware Engineer">Software Engineer</option>
+                    <option value="Project Manager">Project Manager</option>
+                </datalist>
+
+                <label for="interests-field">Interesses:</label>
+                <div class="option">
+                    <input type="checkbox" id="cbox1">
+                    <label for="cbox1">Programador</label>
+                </div>
+
+                <div class="option">
+                    <input type="checkbox" id="cbox2">
+                    <label for="cbox2">Designer</label>
+                </div>
+
+                <div class="option">
+                    <input type="checkbox" id="cbox3">
+                    <label for="cbox2">Analista</label>
+                </div>
+
+            </fieldset>
+
+            <button type="submit" id="submit" name="submit">Enviar Dados</button>
+        </form>
+    </div>
+</body>
+
+</html>
